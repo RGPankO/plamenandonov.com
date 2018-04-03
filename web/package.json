@@ -12,6 +12,7 @@
     "gulp:html": "gulp html",
     "gulp:html:watch": "gulp html:watch",
     "gulp:watch": "gulp watch",
+    "gulp:build": "gulp build",
     "gulp:inject": "gulp inject"
   },
   "author": "",

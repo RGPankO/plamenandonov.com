@@ -102,6 +102,17 @@ gulp.task('inject:watch', function () {
 });
 
 
+gulp.task('build', function () {
+  gulp.start('img');
+  gulp.start('sass');
+  gulp.start('css');
+  gulp.start('copy:libs:css');
+  gulp.start('copy:libs:js');
+  gulp.start('copy:libs:jsDep');
+  gulp.start('copy:libs:img');
+  gulp.start('html');
+});
+
 
 gulp.task('watch', function () {
   gulp.start('img');
