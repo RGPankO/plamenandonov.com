@@ -1,0 +1,13 @@
+img {
+    max-width: 100%;
+}
+
+body {
+    .jumbotron{
+        padding: 1rem;
+        
+        @include mq($from: xs){
+            padding: 2rem;
+        }
+    } 
+}
