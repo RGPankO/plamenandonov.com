@@ -6,4 +6,9 @@
         padding-left: 2rem;
         padding-right: 2rem;
     }
+    #navbarColor01 {
+        @include mq($until: md){
+            padding-bottom: 1rem;
+        }
+    }
 }
