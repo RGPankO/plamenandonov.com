@@ -31,5 +31,11 @@
         img {
             border: 2px solid $gray-700;
         }
+
+        a {
+            @include mq($until: xs){
+                pointer-events: none;
+            }
+        }
     }
 }
