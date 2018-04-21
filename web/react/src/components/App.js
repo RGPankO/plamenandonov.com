@@ -1,10 +1,11 @@
 import React, {Component} from "react";
-// import {Router, Route, browserHistory, IndexRoute} from "react-router"
+import 'bootstrap';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import Header from "./Header/Header";
 import Home from "./Home/Home";
 import Projects from "./Projects/Projects";
 import Contacts from "./Contacts/Contacts";
+const bootstrap_overriden = require('./sass/bootstrap.min.css');
 const css = require('./sass/style.scss');
 
 class App extends Component {
