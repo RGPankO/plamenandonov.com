@@ -16,9 +16,35 @@ class Projects extends Component {
     render() {
         return (
             <div className="jumbotron">
+                <h2 className="display-3">Vauxhall</h2>
+                <h3>Vauxhall - <a href="https://vauxhall.co.uk/" target="_blank">Project link</a></h3>
+                <p>Drupal CMS driven website with focus on Webforms contrib module.</p>
+                <p>Extensive use of OOP JS and CSS3 animations to achieve the desired UI/UX.</p>
+                
+                <ul className="project-gallery">
+                    <li className="item"><a href={require('./images/vauxhall/vauxhall_1.jpg')} data-lightbox="vauxhall"><img src={require('./images/vauxhall/vauxhall_1.jpg')} alt="" /></a></li>
+                    <li className="item"><a href={require('./images/vauxhall/vauxhall_2.jpg')} data-lightbox="vauxhall"><img src={require('./images/vauxhall/vauxhall_2.jpg')} alt="" /></a></li>
+                    <li className="item"><a href={require('./images/vauxhall/vauxhall_3.jpg')} data-lightbox="vauxhall"><img src={require('./images/vauxhall/vauxhall_3.jpg')} alt="" /></a></li>
+                    <li className="item"><a href={require('./images/vauxhall/vauxhall_4.jpg')} data-lightbox="vauxhall"><img src={require('./images/vauxhall/vauxhall_4.jpg')} alt="" /></a></li>
+                </ul>
+
+                <h2>Technology used:</h2>
+                <ul className="list-group">
+                    <li className="list-group-item d-flex justify-content-between align-items-center">
+                        Back-end: Drupal 8, PHP, MySQL,  
+                    </li>
+                    <li className="list-group-item d-flex justify-content-between align-items-center">
+                        Front-end: HTML5, CSS3, OOP JavaScript, jQuery
+                    </li>
+                    <li className="list-group-item d-flex justify-content-between align-items-center">
+                            Utility: Gulp, SASS, Babel, PostCSS - Autoprefixer
+                    </li>
+                </ul>
+            
+                <hr className="my-4" />
                 <h2 className="display-3">Nesquik Studios</h2>
                 <h3>Nestle - <a href="https://www.nesquikstudios.fr/" target="_blank">Project link</a></h3>
-                <p>Drupal CMS driven website with multiplpe of third party integrations.</p>
+                <p>Drupal CMS driven website with multiplpe third party integrations.</p>
                 <p>Gigya RAAS CIAM, Brightcove video platform, Fusepump, Salesforce, Google Tag Manager with custom events</p>
                 
                 <ul className="project-gallery">
