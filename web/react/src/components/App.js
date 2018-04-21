@@ -1,4 +1,8 @@
 import React, {Component} from "react";
+window.$ = require('jquery');
+require('lightbox2/dist/css/lightbox.min.css')
+window.lightbox = require('lightbox2');
+import 'lightbox2';
 import 'bootstrap';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import Header from "./Header/Header";
