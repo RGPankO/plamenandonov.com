@@ -10,10 +10,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^4.1.0",
     "file-loader": "^1.1.11",
     "html-react-parser": "^0.4.3",
     "imagemin-mozjpeg": "^7.0.0",
     "imagemin-webpack-plugin": "^2.1.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
     "react-router-dom": "^4.2.2",
