@@ -1,6 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var ImageminPlugin = require('imagemin-webpack-plugin').default;
+var imageminMozjpeg = require('imagemin-mozjpeg');
 
 module.exports = {
   entry: './src/index.js',
@@ -62,6 +64,18 @@ module.exports = {
       filename:  'app.css',
       allChunks: true,
       publicPath: './dist'
+    }),
+    new ImageminPlugin({
+      maxFileSize: 10000, // Only apply this one to files equal to or under 10kb
+      jpegtran: { progressive: false }
+    }),
+    new ImageminPlugin({
+      plugins: [
+        imageminMozjpeg({
+          quality: 80,
+          progressive: true
+        })
+      ]
     })
   ]
 }
